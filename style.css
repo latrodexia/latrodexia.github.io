@@ -1,25 +1,68 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    background-image: url('https://t3.ftcdn.net/jpg/03/08/60/88/360_F_308608803_h7uIbcaeKXhvLBd36Nk8JfwKJX7nbSR8.jpg');
-    background-size: repeat;
-    margin: 0;
-    height: 100vh;
+.mydiv {
+    text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    flex-direction: column;
+    width: 80vw;
 }
 
-.slide-text {
-    position: absolute;
-    top: 50%;
-    left: -100%; 
-    white-space: nowrap;
-    animation: slideText 5s linear infinite;
+
+.images img {
+    height: 500px;
 }
-@keyframes slideText {
-    0% { left: -100%; }
-    100% { left: 100%; }
+
+.hero-img {
+  height:120px;
+  object-fit: contain;
 }
+
+body {
+    background-color: rgb(235, 161, 161); /* Set the background color to black */
+    display: flex; /* Enable Flexbox layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    margin: 0; /* Remove default margin */
+    color: white;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+  }
+  #title {
+    background-color: white;
+    color: black;
+    flex-direction: row;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .flex-container > div {
+    color: white;
+    width: 100px;
+    margin: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 15px;
+  }
+  
+
+  .skibi {
+    width: fit-content;
+    padding: 10px;
+    text-align: center;
+  }
+  .skibi:hover {
+    background-color:rgba(241, 210, 225, 0.424);
+  }
+
+  a {
+    text-decoration: none; /* Removes underline */
+    color: rgb(245, 227, 235); /* Sets the default link color */
+  }
+  
+  a:visited {
+    color: rgb(245, 227, 235); /* Ensures the color stays the same after clicking */
+  }
+  
