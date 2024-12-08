@@ -15,15 +15,21 @@
 .hero-img {
   height:120px;
   object-fit: contain;
+  border-radius: 10%;
+}
+
+.hero-img:hover {
+  box-shadow: 0 0 4px 6px rgba(190, 94, 121, 0.266);
+  transition: all 0.3s ease;
 }
 
 body {
-    background-color: rgb(235, 161, 161); /* Set the background color to black */
+    background-color: rgba(255,240,243,255);
     display: flex; /* Enable Flexbox layout */
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
     margin: 0; /* Remove default margin */
-    color: white;
+    color: rgba(229,134,165,255);
     font-family: Arial, sans-serif;
     flex-direction: column;
   }
@@ -55,14 +61,16 @@ body {
   }
   .skibi:hover {
     background-color:rgba(241, 210, 225, 0.424);
+    box-shadow: 0 4px 8px rgba(190, 94, 121, 0.602);
+    transition: all 0.3s ease;
   }
 
   a {
     text-decoration: none; /* Removes underline */
-    color: rgb(245, 227, 235); /* Sets the default link color */
+    color: rgba(229,134,165,255);
   }
   
   a:visited {
-    color: rgb(245, 227, 235); /* Ensures the color stays the same after clicking */
+    color: rgba(229,134,165,255);
   }
   
