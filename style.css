@@ -8,8 +8,15 @@
 }
 
 
-.images img {
+.image-container img {
     height: 500px;
+    cursor:pointer;
+
+}
+
+.image-container img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 6px 6px rgba(190, 94, 121, 0.266);
 }
 
 .hero-img {
@@ -19,16 +26,16 @@
 }
 
 .hero-img:hover {
-  box-shadow: 0 0 4px 6px rgba(190, 94, 121, 0.266);
   transition: all 0.3s ease;
+  transform: scale(1.20);
 }
 
 body {
     background-color: rgba(255,240,243,255);
-    display: flex; /* Enable Flexbox layout */
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    margin: 0; /* Remove default margin */
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    margin: 0; 
     color: rgba(229,134,165,255);
     font-family: Arial, sans-serif;
     flex-direction: column;
@@ -58,19 +65,68 @@ body {
     width: fit-content;
     padding: 10px;
     text-align: center;
+    transform: scale(1.05);
+
   }
   .skibi:hover {
     background-color:rgba(241, 210, 225, 0.424);
     box-shadow: 0 4px 8px rgba(190, 94, 121, 0.602);
     transition: all 0.3s ease;
+    transform: scale(1.10);
+
   }
 
   a {
     text-decoration: none; /* Removes underline */
     color: rgba(229,134,165,255);
-  }
+  } 
   
   a:visited {
-    color: rgba(229,134,165,255);
+    color: rgba(192,90,125,255);
   }
+
+.lightbox {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8); /* Darken the background */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.lightbox img {
+  max-width: 80%;
+  max-height: 80%;
+  transition: transform 0.3s ease;
+}
+
+.lightbox .close, .lightbox .prev, .lightbox .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.lightbox .close {
+  top: 10%;
+  right: 10%;
+}
+
+.lightbox .prev {
+  left: 5%;
+}
+
+.lightbox .next {
+  right: 5%;
+}
+
   

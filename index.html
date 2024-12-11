@@ -9,6 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link href="style.css" rel="stylesheet">
+  
   <style>
     @keyframes fadeIn {
         from {
@@ -47,17 +48,23 @@
 
     <div style="text-align: center; line-height: 1.6; margin-bottom: 30px;">
         <b>celexia_artsss</b> is an Australian digital cartoonist and home-based vendor.<br>
-        You can follow me on <a href="https://www.tiktok.com/@celexia_artsss" style="color:rgba(192,90,125,255);"> tiktok</a>, <a href="https://www.instagram.com/celexia_artsss/?hl=en" style="color: rgba(192,90,125,255);">instagram</a>, <a href="https://www.tumblr.com/celexia-artsss" style="color:rgba(192,90,125,255);">tumblr</a>, <a href="https://bsky.app/profile/celexia-artsss.bsky.social" style="color: rgba(192,90,125,255);">bsky</a>, and <a href="https://x.com/celexia_artsss" style="color: rgba(192,90,125,255);"> X</a>! :) <br>
-        My shop is on <a href = "https://ko-fi.com/celexia_artsss" style="color:rgba(192,90,125,255);">ko-fi. </a>
+        You can follow me on <a href="https://www.tiktok.com/@celexia_artsss" style="color:rgb(160, 196, 234);"> tiktok</a>, <a href="https://www.instagram.com/celexia_artsss/?hl=en" style="color: rgb(160, 196, 234);">instagram</a>, <a href="https://www.tumblr.com/celexia-artsss" style="color:rgb(160, 196, 234);">tumblr</a>, <a href="https://bsky.app/profile/celexia-artsss.bsky.social" style="color: rgba(192,90,125,255);">bsky</a>, and <a href="https://x.com/celexia_artsss" style="color: rgba(192,90,125,255);"> X</a>! :) <br>
+        My shop is on <a href = "https://ko-fi.com/celexia_artsss" style="color:rgb(160, 196, 234);">ko-fi. </a>
     </div>
 
-
-    <div class = "images">
-        <img src = "theaa.png">
-        <img
+    <div class = "image-container">
+        <img src="sebkcharactersheet.png" class="gallery-item" alt="sebastian king character sheet">
+        <img src = "theaa.png" class="gallery-item" alt="rendered oc illustration">
+        <img src = "athenecharactersheet.png" class="gallery-item" alt="athena chen character sheet">
     </div>
-
-
+    
+    <div id="lightbox" class="lightbox">
+        <button class="close">&times;</button>
+        <button class="prev">&#10094;</button>
+        <img id="lightbox-img" src="" alt="Expanded Image">
+        <button class="next">&#10095;</button>
+    </div>
+    
   <script src="js/script.js"></script>
 </body>
 
